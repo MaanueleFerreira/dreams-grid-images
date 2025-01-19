@@ -13,8 +13,9 @@
           --color-text-primary: #fff;
           --color-text-secondary: #BBB3E6;
 
-          --font-size-header: 2.8rem;
-          --font-size-p: 1rem;
+          --font-size-h1:clamp(2.5rem, .5rem + 5vw, 3.3rem);
+          --font-size-p: .8rem;
+          --font-size-h2: clamp(.5rem, .5rem + 3vw, 1.6rem);
 }
 
 body {
@@ -43,7 +44,7 @@ header p {
 
 header h1 {
           font-family: var(--font-family-details);
-          font-size: var(--font-size-header);
+          font-size: var(--font-size-h1);
 }
 
 main {
@@ -66,6 +67,8 @@ main {
           object-fit: cover;
           z-index: -1;
           border-radius: .5rem;
+          filter:brightness(.6) saturate(1) ;
+          transition: 300ms;
 }
 
 img {
@@ -76,7 +79,7 @@ img {
 img:hover {
           transform: scale(1.03);
           transition: 200ms ease-in;
-          opacity: .5;
+          filter: brightness(1) saturate(1.8);
 }
 
 
@@ -86,7 +89,7 @@ img:hover {
           left: 1.7rem;
           color: var(--color-text-secondary);
           color: var(--color-text-primary);
-          font-size: 1.3rem;
+          font-size: var(--font-size-h2);
           flex-wrap: wrap;
           display: flex;
           flex-direction: column;
