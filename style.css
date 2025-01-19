@@ -1,0 +1,100 @@
+* {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+}
+
+:root {
+          --font-family-global: "Poppins", serif;
+          --font-family-details: "Playwrite AU SA", serif;
+
+          --color-bg: #28293E;
+          --color-details: #f34739;
+          --color-text-primary: #fff;
+          --color-text-secondary: #BBB3E6;
+}
+
+body {
+          background-color: var(--color-bg);
+          color: var(--color-text-primary);
+          font-family: var(--font-family-global);
+}
+
+header {
+          line-height: .6em;
+          text-align: center;
+          margin: 8rem auto 5rem auto;
+          max-width: 21rem;
+}
+
+
+header p {
+          color: var(--color-text-secondary);
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: .2em;
+          font-size: 1.2rem;
+          margin-bottom: 2rem;
+}
+
+header h1 {
+          font-family: var(--font-family-details);
+          font-size: 3rem;
+
+}
+
+main {
+          max-width: 21rem;
+          margin: 0 auto;
+          display: grid;
+          gap: 1.5rem;
+          margin-bottom: 5rem;
+}
+
+.cards {
+          position: relative;
+}
+
+.cards img {
+          height: 25rem;
+          object-fit: cover;
+          z-index: -1;
+          border-radius: .5rem;
+}
+
+img {
+          width: 100%;
+          height: auto;
+}
+
+img:hover {
+          transform: scale(1.05);
+          transition: 200ms ease-in;
+          opacity: .5;
+}
+
+
+.cards h2 {
+          position: absolute;
+          bottom: 3.1rem;
+          left: 1.7rem;
+          color: var(--color-text-secondary);
+          font-size: 1.3rem;
+          flex-wrap: wrap;
+          color: var(--color-text-primary);
+          display: flex;
+          flex-direction: column;
+          gap: 0.2rem;
+}
+
+.cards span {
+          font-size: .8rem;
+          background-color: var(--color-text-primary);
+          padding: .3rem .6rem;
+          border-radius: 19px;
+          font-weight: 500;
+          display: inline-flex;
+          align-items: center;
+          color: var(--color-text-secondary);
+          width: fit-content;
+}
